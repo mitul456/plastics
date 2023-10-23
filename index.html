@@ -25,14 +25,18 @@
         </ul>
         <ul>
             <li><a href="#">HOME</a></li>
-            <li><a href="#">CAPABILITIES</a></li>
-            <li><a href="#">PROCESS</a></li>
-            <li><a href="#">APPLICATIONS</a></li>
+            <li><a href="#scrollspyHeading1">CAPABILITIES</a></li>
+            <li><a href="#scrollspyHeading2">PROCESS</a></li>
+            <li><a href="#scrollspyHeading3">APPLICATIONS</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">NEWS</a></li>
             <li><a href="#">CONTACT</a></li>
         </ul>
     </nav>
+
+
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+
 
     <!-- top banner codes  -->
     <div class="banner">
@@ -72,7 +76,7 @@
     </div>
 
     <!-- section 1 codes  -->
-    <div class="bannerDown">
+    <div id="scrollspyHeading1" class="bannerDown">
       <div class="bannerInside">
         <h1><span class="ce">CAPABILITUES</span></h1><br>
         <div class="line2"></div>
@@ -94,7 +98,7 @@
     </div>
 
     <!-- Our Process   -->
-<div class="section3">
+<div id="scrollspyHeading2" class="section3">
   <h1>OUR PROCESS</h1>
   <div class="cardM">
     <div class="card1">
@@ -120,21 +124,51 @@
 
 <!-- Application codes -->
 
-<div class="section4">
+<div id="scrollspyHeading3" class="section4">
   <h1>APPLICATIONS</h1>
   <div class="appIm">
-    <div class="ro1"><span class="appT">MEDICAL</span></div>
-    <div class="ro2"><span class="appT">OEM</span></div>
-    <div class="ro3"><span class="appT">CONSTRUCTIONS</span></div>
+    <div class="ro1" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="appT">MEDICAL</span></div>
+    <div class="ro2" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="appT">OEM</span></div>
+    <div class="ro3" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="appT">CONSTRUCTIONS</span></div>
   </div>
   <div class="appIm2">
-    <div class="ro4"><span class="appT">TRANSPORTATION</span></div>
-    <div class="ro5"><span class="appT">DUNNAGE</span></div>
+    <div class="ro4" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="appT">TRANSPORTATION</span></div>
+    <div class="ro5" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="appT">DUNNAGE</span></div>
   </div>
   <div class="appIm3">
-    <div class="ro6"><span class="appT">MATERIAL HANDLING</span></div>
-    <div class="ro7"><span class="appT">OUTDOOR/REC</span></div>
-    <div class="ro8"><span class="appT">AGRICULTURE</span></div>
+    <div class="ro6" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="appT">MATERIAL HANDLING</span></div>
+    <div class="ro7"data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="appT">OUTDOOR/REC</span></div>
+    <div class="ro8"data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="appT">AGRICULTURE</span></div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/masthead/masthead-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/masthead/masthead-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/masthead/masthead-3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -144,10 +178,18 @@
 
 
 
+<!-- footer section  -->
+<div class="footer">
+  <div class="con1">
+    
+  </div>
+  <div class="con2"></div>
+</div>
 
 
 
 
+</div>
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
